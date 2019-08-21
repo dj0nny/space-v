@@ -29,14 +29,14 @@ export default {
       {
         name: 'Home',
         linkTo: '/',
-      }
-    ])
+      },
+    ]);
 
     return {
       links,
-    }
-  }
-}
+    };
+  },
+};
 </script>
 
 <style scoped>
