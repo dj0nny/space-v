@@ -1,5 +1,11 @@
 # space-v
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/61f609cf-3ba1-4a8f-905d-ab831f6a0bb1/deploy-status)](https://app.netlify.com/sites/space-v/deploys)
+[![npm version](https://badge.fury.io/js/vue.svg)](https://badge.fury.io/js/vue)
+[![npm version](https://badge.fury.io/js/vue-function-api.svg)](https://badge.fury.io/js/vue-function-api)
+![GitHub top language](https://img.shields.io/github/languages/top/dj0nny/space-v)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
+
 > A Vue.js client for the SpaceX API
 
 ## Getting Started
