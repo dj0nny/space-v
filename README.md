@@ -1,5 +1,6 @@
 # space-v
 
+[![Build Status](https://travis-ci.org/dj0nny/space-v.svg?branch=develop)](https://travis-ci.org/dj0nny/space-v)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/61f609cf-3ba1-4a8f-905d-ab831f6a0bb1/deploy-status)](https://app.netlify.com/sites/space-v/deploys)
 [![npm version](https://badge.fury.io/js/vue.svg)](https://badge.fury.io/js/vue)
 [![npm version](https://badge.fury.io/js/vue-function-api.svg)](https://badge.fury.io/js/vue-function-api)
@@ -54,7 +55,7 @@ npm run build
 yarn build
 ```
 
-<!-- A deployed version on [Netlify](https://www.netlify.com/) in available at this URL: https://vue-function-api-realworld.netlify.com/#/ -->
+A deployed version on [Netlify](https://www.netlify.com/) in available at this URL: https://space-v.netlify.com/#/
 
 ## Built with ❤️ using:
 
