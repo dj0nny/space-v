@@ -15,8 +15,8 @@ export default {
   name: 'HistoryItem',
   props: {
     value: Object,
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
