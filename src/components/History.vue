@@ -1,6 +1,6 @@
 <template>
   <b-row>
-    <b-col md=4 v-for="(item, index) in historyList.history" :key="index">
+    <b-col md=4 v-for="(item, index) in historyList" :key="index">
       <HistoryItem :value="item" />
     </b-col>
   </b-row>
@@ -15,7 +15,7 @@ export default {
     HistoryItem,
   },
   props: {
-    historyList: Object,
+    historyList: Array,
   },
 };
 </script>

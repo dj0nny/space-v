@@ -5,7 +5,8 @@
       {{ value.details | truncate(100) }}
     </b-card-text>
 
-    <b-button href="#" class="more">Discover more</b-button>
+    <!-- <b-button  class="more">Discover more</b-button> -->
+    <router-link class="more" :to="{ name: 'historyDetailPage', params : { id: value.id }}">Discover more</router-link>
   </b-card>
   </div>
 </template>
@@ -36,10 +37,11 @@ export default {
     border: 1px solid #0b0b0b;
     text-transform: uppercase;
     display: block;
-    /* margin-top: 20px; */
     width: 200px;
     margin: auto;
     margin-top: 20px;
+    padding: 10px 20px;
+    transition: .3s all;
 }
 
 .more:hover {
