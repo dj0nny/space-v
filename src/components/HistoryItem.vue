@@ -33,19 +33,25 @@ export default {
 }
 
 .more {
-    background: #0b0b0b;
-    border: 1px solid #0b0b0b;
-    text-transform: uppercase;
-    display: block;
-    width: 200px;
-    margin: auto;
-    margin-top: 20px;
-    padding: 10px 20px;
-    transition: .3s all;
+  background: #0b0b0b;
+  border: 1px solid #0b0b0b;
+  text-transform: uppercase;
+  display: block;
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 20px;
+  transition: .3s all;
 }
 
 .more:hover {
-    color: #0b0b0b !important;
-    background: #fff;
+  color: #0b0b0b !important;
+  background: #fff;
+}
+
+@media screen and (max-width: 768px)  {
+  .more {
+    width: 170px;
+  }
 }
 </style>
