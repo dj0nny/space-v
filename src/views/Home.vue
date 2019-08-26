@@ -1,6 +1,7 @@
 <template>
   <b-container class="feed text-center">
-    <history :historyList="history" />
+    <b-spinner v-if="isLoading" label="Spinning"></b-spinner>
+    <history v-if="!isLoading" :historyList="history" />
   </b-container>
 </template>
 
@@ -18,7 +19,7 @@ export default {
     History,
   },
   setup() {
-    const { history } = useState(['history']);
+    const { history, isLoading } = useState(['history', 'isLoading']);
     const { FETCH_HISTORY_FEED } = useActions([types.FETCH_HISTORY_FEED]);
 
     onCreated(async () => {
@@ -27,6 +28,7 @@ export default {
 
     return {
       history,
+      isLoading,
     };
   },
 };

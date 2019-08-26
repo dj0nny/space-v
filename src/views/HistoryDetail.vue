@@ -2,7 +2,10 @@
   <div class="history-detail">
     <b-container>
       <b-row>
-        <b-col md=12 class="text">
+        <b-col v-if="isLoading" md=12 class="text-center">
+          <b-spinner label="Spinning"></b-spinner>
+        </b-col>
+        <b-col v-if="!isLoading" md=12 class="text-left">
           <h1 class="article-title">{{ currentHistoryItem.title }}</h1>
           <p class="description">
             {{ currentHistoryItem.details }}
@@ -30,7 +33,7 @@ import types from '../store/types';
 export default {
   name: 'HistoryDetail',
   setup() {
-    const { currentHistoryItem } = useState(['currentHistoryItem']);
+    const { currentHistoryItem, isLoading } = useState(['currentHistoryItem', 'isLoading']);
     const { FETCH_HISTORY_DETAIL } = useActions([types.FETCH_HISTORY_DETAIL]);
     const { route } = useRouter();
 
@@ -40,6 +43,7 @@ export default {
 
     return {
       currentHistoryItem,
+      isLoading,
     };
   },
 };
