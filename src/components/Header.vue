@@ -30,6 +30,10 @@ export default {
         name: 'Home',
         linkTo: '/',
       },
+      {
+        name: 'Launches',
+        linkTo: '/launches',
+      },
     ]);
 
     return {
@@ -55,5 +59,15 @@ ul.menu {
 
 ul.menu li.menu-item {
   display: inline-block;
+}
+
+ul.menu li.menu-item a {
+    margin-right: 20px;
+    padding: 5px;
+}
+
+ul.menu li.menu-item:last-child a {
+    margin-right: 0;
+    padding: 5px;
 }
 </style>
