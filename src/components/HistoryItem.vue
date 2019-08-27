@@ -5,7 +5,6 @@
       {{ value.details | truncate(100) }}
     </b-card-text>
 
-    <!-- <b-button  class="more">Discover more</b-button> -->
     <router-link class="more" :to="{ name: 'historyDetailPage', params : { id: value.id }}">Discover more</router-link>
   </b-card>
   </div>
@@ -20,7 +19,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .history-item {
     margin-bottom: 30px;
 }
