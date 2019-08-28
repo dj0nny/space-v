@@ -13,6 +13,7 @@ export default new Vuex.Store({
     history: [],
     currentHistoryItem: [],
     launches: [],
+    currentLaunch: [],
     isLoading: false,
   },
 
@@ -28,6 +29,9 @@ export default new Vuex.Store({
     },
     [types.SET_LAUNCHES](state, launchesList) {
       state.launches = launchesList;
+    },
+    [types.SET_LAUNCH_DETAIL](state, detail) {
+      state.currentLaunch = detail;
     },
   },
 
@@ -49,6 +53,12 @@ export default new Vuex.Store({
       commit(types.IS_LOADING, true);
       const res = await axios.get(`${BASE_URL}/launches`);
       commit(types.SET_LAUNCHES, res.data);
+      commit(types.IS_LOADING, false);
+    },
+    async [types.FETCH_LAUNCH_DETAIL]({ commit }, launchId) {
+      commit(types.IS_LOADING, true);
+      const res = await axios.get(`${BASE_URL}/launches/${launchId}`);
+      commit(types.SET_LAUNCH_DETAIL, res.data);
       commit(types.IS_LOADING, false);
     },
   },

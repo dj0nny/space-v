@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import HistoryDetail from './views/HistoryDetail.vue';
 import Launches from './views/Launches.vue';
+import LaunchDetail from './views/LaunchDetail.vue';
 
 Vue.use(Router);
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/launches',
       name: 'launches',
       component: Launches,
+    },
+    {
+      path: '/launch/:id',
+      name: 'launchDetail',
+      component: LaunchDetail,
     },
   ],
 });
