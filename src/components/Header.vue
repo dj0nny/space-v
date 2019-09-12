@@ -1,13 +1,8 @@
 <template>
-  <div class="header">
+  <div class="header text-center">
     <b-container>
       <b-row>
-        <b-col md=5>
-          <h1 class="app-title">
-            <router-link to="/">space-v</router-link>
-          </h1>
-        </b-col>
-        <b-col md=7>
+        <b-col md=12>
           <ul class="menu">
             <li class="menu-item" v-for="(link, index) in links" :key="index">
               <router-link :to="link.linkTo">{{ link.name }}</router-link>
@@ -51,7 +46,7 @@ export default {
 .header {
   background: #0b0b0b;
   color: #fff;
-  padding: 15px;
+  padding: 25px;
 }
 
 h1 a {
@@ -62,7 +57,7 @@ ul.menu {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-top: 15px;
+  margin-top: 0;
 }
 
 ul.menu li.menu-item {
