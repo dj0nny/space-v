@@ -17,5 +17,7 @@ export default {
 <style scoped>
 img.card-img-top {
   padding: 25px;
+  width: 250px;
+  margin: auto;
 }
 </style>
