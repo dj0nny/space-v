@@ -4,7 +4,7 @@
       <b-row>
         <b-col md=5>
           <h1 class="app-title">
-            space-v
+            <router-link to="/">space-v</router-link>
           </h1>
         </b-col>
         <b-col md=7>
@@ -34,6 +34,10 @@ export default {
         name: 'Launches',
         linkTo: '/launches',
       },
+      {
+        name: 'News',
+        linkTo: '/news',
+      },
     ]);
 
     return {
@@ -48,6 +52,10 @@ export default {
   background: #0b0b0b;
   color: #fff;
   padding: 15px;
+}
+
+h1 a {
+  text-decoration: none;
 }
 
 ul.menu {
